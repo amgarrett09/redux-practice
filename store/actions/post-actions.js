@@ -19,8 +19,7 @@ export const newPost = formData => async dispatch => {
     body: JSON.stringify(formData)
   });
   const data = await res.json();
-  console.log(data)
-
+  
   dispatch({
     type: NEW_POST,
     payload: data
